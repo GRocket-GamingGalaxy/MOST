@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>
+        M.O.S.T.2
+    </title>
+
+<body>
+    now it's time to get started.
+    <a href="M.O.S.T.html">back</a>
+</body>
+</head>
+
+</html>
+<script>
+    var password = "boy";
+    (function promptPass() {
+        var psw = prompt("are you a boy or a girl");
+        while (psw !== password) {
+            alert("girls are not allowed");
+            return promptPass();
+        }
+    }());
+    alert('WELCOME')
+</script>
