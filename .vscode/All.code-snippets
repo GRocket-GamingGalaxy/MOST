@@ -1,0 +1,21 @@
+{
+    "start": {
+       "scope": "html",
+        "prefix": "start",
+        "body": [
+            "<html>",
+
+            "<head>",
+            "<title>",
+            "       ",
+            "</title>",
+            "</head>",
+
+            "<body>",
+            "      ",
+            "</body>",
+
+            "</html>",
+        ]
+    }
+}
