@@ -25,9 +25,9 @@
     var password2 = "yes"
     (function promptPass() {
         var psw = prompt("are you new to this website");
-        if (psw !== password) {
+        if (psw == password) {
             alert("WELCOME");
-        } else if (psw !== password2){
+        } else if (psw == password2){
             alert('WELCOME BACK')
         } else {
             alert("what?!")
