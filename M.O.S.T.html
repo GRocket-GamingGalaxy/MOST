@@ -27,11 +27,10 @@
         var psw = prompt("are you new to this website");
         if (psw !== password) {
             alert("WELCOME");
-            return true;   
-        } else {
-            
-        } {
+        } else if (psw !== password2){
             alert('WELCOME BACK')
+        } else {
+            alert("what?!")
         }
     }());
 </script>
