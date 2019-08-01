@@ -24,12 +24,13 @@
     var password = "no";
     (function promptPass() {
         var psw = prompt("are you new to this website");
-        while (psw !== password) {
+        if (psw !== password) {
             alert("WELCOME");
             return true;
+        } else {
+            alert('WELCOME BACK')
         }
     }());
-    alert('WELCOME BACK')
 </script>
 <style>
     
