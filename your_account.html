@@ -7,9 +7,21 @@
 </head>
 
 <body>
-    <button>
-        
+    <style>
+        button:hover {
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+    <button onclick="talk()">
+        talk to the owners
     </button>
+    <script>
+        function talk() {
+            window.location = "talk.html";
+        }
+    </script>
 </body>
 
 </html>
