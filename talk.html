@@ -2,24 +2,28 @@
 
 <head>
     <title>chat</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
     <div class="chatbox">
         <div class="chatlogs">
-            <div class="chat">
-                <div class="user-photo"></div>
+            <div class="chat friend">
+                <div class="user-photo"><img src="img/userOne.png"></div>
                 <p class="chat-message">what's up, dawg</p>
             </div>
-            <div class="chat">
-                <div class="user-photo"></div>
+            <div class="chat self ">
+                <div class="user-photo"><img src="img/userTwo.png"></div>
                 <p class="chat-message">what's up</p>
             </div>
         </div>
         <div class="chat-form">
-            <textarea></textarea>
-            <button>send</button>
+            <textarea placeholder="enter anything"></textarea>
+            <button onclick="send()">send</button>
+            <script>function send() {
+
+                }
+            </script>
         </div>
     </div>
 </body>
