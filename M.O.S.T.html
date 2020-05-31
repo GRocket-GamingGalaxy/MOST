@@ -8,43 +8,67 @@
         body {
             background: rgba(0, 255, 55, 0.767)
         }
+        #text {
+            font-size: 17px;
+        }
+        .head {
+            text-align: center;
+        }
+        #middle {
+            margin: 20px;
+        }
+        h1 {
+            padding-bottom: 80px;
+            font-size: 50;
+        }
+        div{
+            padding-bottom: 20px;
+        }
+        h2 {
+            padding-bottom: 20px;
+        }
     </style>
 </head>
 
 <body>
-    hello welcome to M.O.S.T (meeting of super team)
-    <a href="M.O.S.T.2.html">get started</a>
-    <a href="graysonswebsite.html">Grayson's website</a>
-    <a href="calebswebsite.html">Caleb's website</a>
+    <P><h1 class="head">Hello, Welcome to M.O.S.T</h1></P>
+    <p><h2 class="head">(meeting of super team)</h2></p>
+    <div id="text" id="middle" class="head">Now if you want you can <a href="M.O.S.T.2.html">get started</a>
+    or you can visit one of the creaters websites. <a href="graysonswebsite.html">Grayson's website</a>
+    <a href="calebswebsite.html">Caleb's website</a></div>
 </body>
 
 
 </html>
 <script>
     var password = "no";
+    var passwordb = "No";
     var password2 = "yes";
+    var password2b = "Yes";
     (function promptPass() {
-        var psw = prompt("are you new to this website");
-        if (psw == password) {
+        var psw = prompt("Are you new to this website?");
+        if (psw == password||psw == passwordb) {
             alert("WELCOME BACK");
-        } else if (psw == password2){
+        } else if (psw == password2||psw == password2b){
             alert('WELCOME')
+            var boygs = "boy";
+            var boygsb = "Boy";
+            var girll2a = "girl";
+            var girl2ab = "Girl";
+            (function promptPass() {
+                var psw = prompt("Are you a boy or a girl?");
+                if (psw == boygs||psw == boygsb) {
+                    alert("WELCOME");
+                } else if (psw == girll2a||psw == girl2ab){
+                    alert("ERROR! Try Again.")
+                    return promptPass();
+                } else {
+                    alert("what?")
+                    return promptPass();
+                }
+            }());
         } else {
-            alert("what?!")
-            return promptPass();
-        }
-    }());
-    var password = "boy";
-    var password2 = "girl";
-    (function promptPass() {
-        var psw = prompt("are you a boy or a girl");
-        if (psw == password) {
-            alert("WELCOME");
-        } else if (psw == password2){
-            alert('GIRLS ARE NOT ALLOWED')
-            return promptPass();
-        } else {
-            alert("what?!")
+            alert("what?")
             return promptPass();
         }
     }());
